@@ -44,6 +44,11 @@
 }
 
 :root {
+  --blue-100: #eef6ff;
+  --blue-300: #c7deff;
+  --blue-500: #97c1ff; /* bleu logo principal */
+  --blue-700: #5d9fff;
+  --blue-900: #1f6fff;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -113,8 +118,17 @@
 }
 
 @layer base {
+  .font-made {
+    font-family: var(--font-made);
+  }
+
+  .font-comfortaa {
+    font-family: var(--font-comfortaa);
+  }
+
   * {
     @apply border-border outline-ring/50;
+    font-family: var(--font-made);
   }
   body {
     @apply bg-background text-foreground;
